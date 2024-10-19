@@ -1,3 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* 
+.slick-slide {
+	transform: scale(0.8);
+	transition: all 0.4s ease-in-out;
+	padding: 40px 0;
+}
+
+
+.slick-slide img {
+	max-width: 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+.slick-center {
+	transform: scale(1.1);
+} */
+
+/* .slick-slide{
+  width: 100px;
+} */
+
+.slick-dots li button:before {
+  color: white;
+  size: 1rem;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
+/* .slick-track
+{
+    display: flex !important;
+} */
+
+.slick-slide{
+  z-index: 1;
+  padding: 0 27px;
+ position: relative;
+}
+
+.slick-list{
+	position: relative;
+	z-index: 0;
+}
+
+
+
+
+

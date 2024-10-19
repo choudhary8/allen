@@ -3,6 +3,10 @@ import './App.css'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Layout from './Layout'
 import Home from './components/Home'
+import Clider from './components/Clider'
+import Navbar from './components/Navbar'
+
+
 
 const router=createBrowserRouter(
   createRoutesFromElements(
