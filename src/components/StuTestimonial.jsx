@@ -1,6 +1,6 @@
 import { RiDoubleQuotesL } from "react-icons/ri";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import Slider from "react-slick";
 
@@ -14,7 +14,7 @@ const settings = {
     adaptiveHeight: false,
   };
   
-const Testimonial = ({ testimonials }) => {
+const StuTestimonial = ({ testimonials }) => {
   return (
     <>
       <div className=" slider-container w-3/4 m-10 " >
@@ -51,4 +51,4 @@ const Testimonial = ({ testimonials }) => {
   );
 };
 
-export default Testimonial;
+export default StuTestimonial;

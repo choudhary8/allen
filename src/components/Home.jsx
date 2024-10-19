@@ -1,12 +1,12 @@
 import Promo from "./Promo";
 import { FaArrowRight } from "react-icons/fa6";
-import Testimonial from "./testimonial";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import Slider from "react-slick";
 import { Result } from "postcss";
 import Res from "./Res";
+import StuTestimonial from "./StuTestimonial";
 
 const settings = {
   dots: true,
@@ -211,7 +211,7 @@ const Home = () => {
               Here's what students are saying
             </div>
           </div>
-          <Testimonial testimonials={testimonials} />
+          <StuTestimonial testimonials={testimonials} />
         </div>
 
         <div>
