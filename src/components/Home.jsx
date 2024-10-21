@@ -65,14 +65,14 @@ const Home = () => {
 
   return (
     <>
-      <div className="lg:px-44 px-6">
+      <div className="lg:px-44 px-6 pb-5">
         <Promo promoSrc="https://res.cloudinary.com/dpzpn3dkw/image/upload/w_1280,f_auto,q_auto/v1727944051/e8gk63cgiwlqg4dgtxmi.webp?_upload_ref=ic_img_tool" />
         
         
         <div className="flex lg:flex-row flex-col items-center">
           <div className="lg:w-1/2 mx-16 flex justify-center lg:justify-start">
             <div>
-              <h2 className="pt-8 pb-10 text-4xl font-bold">
+              <h2 className="pt-8 pb-10 text-2xl md:text-4xl font-bold">
                 <div>Your Dream.</div>
                 <div>Our Expertise.</div>
               </h2>
@@ -86,7 +86,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2 w-3/4 silder-container px-16 m-4">
+          <div className="lg:w-1/2 md:w-3/4 w-full silder-container md:px-16 m-4">
           <Slider {...settings} className="w-contain">
             <img src="https://allen.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpzpn3dkw%2Fimage%2Fupload%2Fv1707310905%2Fc_1_aorh14.webp&w=828&q=75" alt="" />
             <img src="https://allen.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpzpn3dkw%2Fimage%2Fupload%2Fv1707310904%2Fc_2_ix0igr.webp&w=828&q=75" alt="" />
@@ -98,38 +98,38 @@ const Home = () => {
         </div>
 
         <div className="py-12 slider-container mt-8 m-4">
-          <Slider {...settings} className="flex justify-center p-5 w-full">
+          <Slider {...settings} className="flex justify-center lg:p-5 w-full">
             <a href="">
               <img
-                className="rounded-3xl w-full"
+                className="lg:rounded-3xl rounded-lg w-full"
                 src="https://res.cloudinary.com/dpzpn3dkw/image/upload/w_1280,f_auto,q_auto/v1727944261/w6oi3seuvlmsggphhpxi.webp?_upload_ref=ic_img_tool"
                 alt=""
               />
             </a>
             <a href="">
               <img
-                className="rounded-3xl w-full"
+                className="lg:rounded-3xl rounded-lg w-full"
                 src="https://res.cloudinary.com/dpzpn3dkw/image/upload/w_1024,f_auto,q_auto/v1728295471/gbvvlbtgpsecq57ivwff.png?_upload_ref=ic_img_tool"
                 alt=""
               />
             </a>
             <a href="">
               <img
-                className="rounded-3xl w-full"
+                className="lg:rounded-3xl rounded-lg w-full"
                 src="https://res.cloudinary.com/dpzpn3dkw/image/upload/v1728302450/Homepage_Banner_1_sn5css.webp"
                 alt=""
               />
             </a>
             <a href="">
               <img
-                className="rounded-3xl w-full"
+                className="lg:rounded-3xl rounded-lg w-full"
                 src="https://res.cloudinary.com/dpzpn3dkw/image/upload/w_1280,f_auto,q_auto/v1727944598/wr9qyk4gyqgnntgonfvy.webp?_upload_ref=ic_img_tool"
                 alt=""
               />
             </a>
             <a href="">
               <img
-                className="rounded-3xl w-full"
+                className="lg:rounded-3xl rounded-lg w-full"
                 src="https://res.cloudinary.com/dpzpn3dkw/image/upload/w_1280,f_auto,q_auto/v1727944619/v6cgvy44tde2yjq4yguo.webp?_upload_ref=ic_img_tool"
                 alt=""
               />
@@ -139,7 +139,7 @@ const Home = () => {
 
 
         <div className="py-12 m-4">
-            <div className="flex justify-center mb-16 font-bold text-5xl">Our remarkable results in 2024</div>
+            <div className="flex justify-center mb-16 font-bold text-2xl md:text-5xl">Our remarkable results in 2024</div>
             <div className="slider-container z-1">
                 <Slider {...settings}>
                     {
@@ -153,7 +153,7 @@ const Home = () => {
 
         <div className="py-12">
           <div>
-            <h2 className="text-3xl font-medium">
+            <h2 className="text-2xl md:text-3xl font-medium">
               Discover the perfect online program
             </h2>
           </div>
@@ -166,7 +166,7 @@ const Home = () => {
                 href=""
                 className="w-full h-full p-6 w-full h-full flex flex-col justify-between"
               >
-                <div className="font-medium text-2xl">JEE</div>
+                <div className="font-medium text-xl md:text-2xl">JEE</div>
                 <div className="text-base text-blue-500 flex items-center text-blue-500 gap-2 text-lg font-semibold">
                   View
                   <FaArrowRight />
@@ -181,7 +181,7 @@ const Home = () => {
                 href=""
                 className="w-full h-full p-6 w-full h-full flex flex-col justify-between"
               >
-                <div className="font-medium text-2xl">NEET</div>
+                <div className="font-medium text-xl md:text-2xl">NEET</div>
                 <div className="text-base text-blue-500 flex items-center text-blue-500 gap-2 text-lg font-semibold">
                   View
                   <FaArrowRight />
@@ -196,7 +196,7 @@ const Home = () => {
                 href=""
                 className="w-full h-full p-6 w-full h-full flex flex-col justify-between"
               >
-                <div className="font-medium text-2xl">Grade 6-10</div>
+                <div className="font-medium text-xl md:text-2xl">Grade 6-10</div>
                 <div className="text-base text-blue-500 flex items-center text-blue-500 gap-2 text-lg font-semibold">
                   View
                   <FaArrowRight />
@@ -218,25 +218,25 @@ const Home = () => {
 
         <div>
           <div>
-            <h2 className="text-3xl font-medium">
+            <h2 className=" text-2xl md:text-3xl font-medium">
               Looking for a classroom based program?
             </h2>
           </div>
 
           <div
-            className="flex mt-6 pt-2 pl-10 pr-10 rounded-3xl"
+            className="md:flex mt-6 pt-2 pl-10 pr-10 rounded-3xl"
             style={{ backgroundColor: "#1a2439" }}
           >
-            <div className="w-1/2 pt-12 pb-4">
-              <div className="text-2xl font-normal">
+            <div className="md:w-1/2 pt-12 pb-4 flex flex-col items-center md:items-start">
+              <div className="text-xl md:text-2xl font-normal">
                 Present in 53 cities with
               </div>
-              <div className="text-2xl font-normal mb-12">250+ calssrooms</div>
+              <div className="text-xl md:text-2xl font-normal mb-12">250+ calssrooms</div>
               <button className="lg:w-36 px-4 py-2 m-1 bg-white text-black rounded-full">
                 Find a center
               </button>
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2">
               <img
                 className=""
                 src="https://res.cloudinary.com/dpzpn3dkw/image/upload/v1707820846/Updated_size_classroom_ck4yjp.webp"

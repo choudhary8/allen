@@ -12,18 +12,32 @@ const settings = {
     autoplay:true,
     autoplaySpeed:3000,
     adaptiveHeight: false,
+    responsive:[
+      {
+        breakpoint:400,
+        settings:{
+          dots: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay:true,
+          autoplaySpeed:3000,
+          adaptiveHeight: false,
+        }
+      }
+    ]
   };
   
 const StuTestimonial = ({ testimonials }) => {
   return (
     <>
-      <div className=" slider-container lg:w-3/4 m-10 " >
+      <div className=" slider-container lg:w-3/4 md:m-10 m-4" >
         <Slider {...settings} className="">
           {testimonials.map((testimonial,index) =>  (
-              <div key={index} className="w-80 " 
+              <div key={index} className="md:w-80 " 
               
               >
-                <div className="h-[430px] pt-4 px-8 pb-8 rounded-2xl mt-5 " style={{ backgroundColor: "#1a2439" }}>
+                <div className="h-[430px] pt-4 md:px-8 px-4 pb-8 rounded-2xl mt-5 " style={{ backgroundColor: "#1a2439" }}>
                 <div className="relative bottom-10 right-4 text-6xl text-[#58b1a6]">
                   <RiDoubleQuotesL />
                 </div>
