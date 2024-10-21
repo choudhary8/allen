@@ -66,13 +66,14 @@ const Home = () => {
   return (
     <>
       <div className="lg:px-44 px-6 pb-5">
-        <Promo promoSrc="https://res.cloudinary.com/dpzpn3dkw/image/upload/w_1280,f_auto,q_auto/v1727944051/e8gk63cgiwlqg4dgtxmi.webp?_upload_ref=ic_img_tool" />
+        <Promo cls='hidden lg:block' promoSrc="https://res.cloudinary.com/dpzpn3dkw/image/upload/w_1280,f_auto,q_auto/v1727944051/e8gk63cgiwlqg4dgtxmi.webp?_upload_ref=ic_img_tool" />
+        <Promo cls='lg:hidden' promoSrc="https://res.cloudinary.com/dpzpn3dkw/image/upload/w_1280,f_auto,q_auto/v1727943882/finroeji0fnsqkwh0x6y.webp?_upload_ref=ic_img_tool"/>
         
         
         <div className="flex lg:flex-row flex-col items-center">
           <div className="lg:w-1/2 mx-16 flex justify-center lg:justify-start">
             <div>
-              <h2 className="pt-8 pb-10 text-2xl md:text-4xl font-bold">
+              <h2 className="pt-8 md:pb-10 text-2xl md:text-4xl font-bold">
                 <div>Your Dream.</div>
                 <div>Our Expertise.</div>
               </h2>

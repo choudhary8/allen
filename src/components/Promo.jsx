@@ -1,8 +1,8 @@
-const Promo=({promoSrc,promoTitle})=>{
+const Promo=({promoSrc,cls})=>{
     return (
         <>
         <div>
-            <img src={promoSrc} alt="" className="py-12 h-40" />
+            <img src={promoSrc} alt="" className={`py-12 ${cls}`} />
         </div>
         </>
     )

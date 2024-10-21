@@ -31,7 +31,10 @@ const router = createBrowserRouter(
         <Route path="class-9/" element={<ComingSoon />} />
         <Route path="class-10/" element={<ComingSoon />} />
       </Route>
-      <Route path=""></Route>
+      <Route path="adsat-register" element={<ComingSoon/>}></Route>
+      <Route path='contact' element={<ComingSoon/>} />
+      <Route path='login' element={<ComingSoon/>} />
+      <Route path="coming-soon" element={<ComingSoon/>} />
     </Route>
   )
 );

@@ -70,6 +70,30 @@
 	  }
 }
 
+.list-item ul{
+	padding-left: 15px;
+}
+
+.list-item ul li{
+	padding: 4px;
+}
+
+ul,li{
+	cursor: pointer;
+}
+
+.nav-list-items ul{
+	visibility: hidden;
+}
+
+.nav-list-items:hover ul{
+	visibility: visible;
+}
+
+.nav-list-items ul{
+	transition: visibility 0.1s ease;
+}
+
 
 
 
