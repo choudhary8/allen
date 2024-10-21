@@ -87,7 +87,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2 md:w-3/4 w-full silder-container md:px-16 m-4">
+          <div className="lg:w-1/2 md:w-3/4 w-full silder-container md:px-16 p-6">
           <Slider {...settings} className="w-contain">
             <img src="https://allen.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpzpn3dkw%2Fimage%2Fupload%2Fv1707310905%2Fc_1_aorh14.webp&w=828&q=75" alt="" />
             <img src="https://allen.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpzpn3dkw%2Fimage%2Fupload%2Fv1707310904%2Fc_2_ix0igr.webp&w=828&q=75" alt="" />
