@@ -208,7 +208,7 @@ const Home = () => {
 
         <div className="py-12 lg:flex justify-between">
           <div className="lg:w-1/4 flex flex-col justify-center">
-            <div className="text-[#58b1a6] font-medium pb-6 hidden lg:visible">TESTIMONIALS</div>
+            <div className="text-[#58b1a6] font-medium pb-6 hidden lg:block">TESTIMONIALS</div>
             <div className="font-medium text-3xl lg:pb-14">
               Here's what students are saying
             </div>

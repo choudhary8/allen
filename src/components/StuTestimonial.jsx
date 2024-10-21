@@ -14,7 +14,7 @@ const settings = {
     adaptiveHeight: false,
     responsive:[
       {
-        breakpoint:400,
+        breakpoint:580,
         settings:{
           dots: true,
           speed: 500,
@@ -37,7 +37,7 @@ const StuTestimonial = ({ testimonials }) => {
               <div key={index} className="md:w-80 " 
               
               >
-                <div className="h-[430px] pt-4 md:px-8 px-4 pb-8 rounded-2xl mt-5 " style={{ backgroundColor: "#1a2439" }}>
+                <div className="h-[430px] pt-4 lg:px-8 px-4 pb-8 rounded-2xl mt-5 " style={{ backgroundColor: "#1a2439" }}>
                 <div className="relative bottom-10 right-4 text-6xl text-[#58b1a6]">
                   <RiDoubleQuotesL />
                 </div>

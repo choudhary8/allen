@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { BiSolidPhoneCall } from "react-icons/bi";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
+import { IoMenu } from "react-icons/io5";
 
 const Navbar=()=>{
+    const [menu,setMenu]=useState(false)
 
     return (
         <nav className="sticky top-0 z-50 " style={{"backgroundColor":"#0f1825"}}>
-        <div className="flex justify-between items-center px-28 min-h-10v">
+        <div className="flex justify-between items-center px-28 min-h-10v hidden lg:flex">
             <div className="flex gap-x-10 items-center" >
                 <NavLink className='py-5 font-black text-3xl ' to='/'>Allen</NavLink>
                 <div className="flex gap-x-6">
@@ -57,7 +59,32 @@ const Navbar=()=>{
                 <button className="px-3 py-1.5 rounded-full border-white border-2">Login</button>
             </div>
         </div>
-        <div></div>
+        <div>
+            <NavLink className="flex justify-between items-center px-4 py-3 lg:hidden">
+                    <div className="flex">
+                        <IoMenu className="font-bold text-3xl"/>
+                        <div className="hidden">
+                        <ul >
+                            <li>
+                                Exams <IoIosArrowDown/>
+                                <ul>
+                                    <li>Jee</li>
+                                    <li>Neet</li>
+                                    <li>Class 6-10</li>
+                                </ul>
+                            </li>
+                            <li>Programs</li>
+                            <li>Schloarships</li>
+                            <li>Test Series</li>
+                            <li>Study Materials</li>
+                        </ul>
+                        <button className="px-3 py-1.5 rounded-full border-white border-2">Login</button>
+                        </div>
+                        <NavLink className='px-2 font-black text-xl ' to='/'>Allen</NavLink>
+                    </div>
+                    <button className="px-3 py-1.5 rounded-full  bg-white text-black flex items-center gap-x-2"><BiSolidPhoneCall className="text-2xl"/>Talk to us</button>
+            </NavLink>
+        </div>
         </nav>
     )
 }
