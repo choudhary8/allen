@@ -65,26 +65,28 @@ const Home = () => {
 
   return (
     <>
-      <div className="px-44">
+      <div className="lg:px-44 px-6">
         <Promo promoSrc="https://res.cloudinary.com/dpzpn3dkw/image/upload/w_1280,f_auto,q_auto/v1727944051/e8gk63cgiwlqg4dgtxmi.webp?_upload_ref=ic_img_tool" />
         
         
-        <div className="flex">
-          <div className="w-1/2 mx-16">
-            <h2 className="pt-8 pb-10 text-4xl font-bold">
-              <div>Your Dream.</div>
-              <div>Our Expertise.</div>
-            </h2>
-            <div className="pt-6 text-xl font-medium">
-              What brings you to us here?
-            </div>
-            <div className="mt-5 flex flex-wrap gap-3">
-              <a className="border-2 border-blue-500 px-5 py-2 rounded-full" href="">NEET</a>
-              <a className="border-2 border-blue-500 px-5 py-2 rounded-full" href="">JEE</a>
-              <a className="border-2 border-blue-500 px-5 py-2 rounded-full" href="">Grade 6-10</a>
+        <div className="flex lg:flex-row flex-col items-center">
+          <div className="lg:w-1/2 mx-16 flex justify-center lg:justify-start">
+            <div>
+              <h2 className="pt-8 pb-10 text-4xl font-bold">
+                <div>Your Dream.</div>
+                <div>Our Expertise.</div>
+              </h2>
+              <div className="pt-6 text-xl font-medium">
+                What brings you to us here?
+              </div>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <a className="border-2 border-blue-500 px-5 py-2 rounded-full" href="">NEET</a>
+                <a className="border-2 border-blue-500 px-5 py-2 rounded-full" href="">JEE</a>
+                <a className="border-2 border-blue-500 px-5 py-2 rounded-full" href="">Grade 6-10</a>
+              </div>
             </div>
           </div>
-          <div className="w-1/2 silder-container px-16">
+          <div className="lg:w-1/2 w-3/4 silder-container px-16 m-4">
           <Slider {...settings} className="w-contain">
             <img src="https://allen.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpzpn3dkw%2Fimage%2Fupload%2Fv1707310905%2Fc_1_aorh14.webp&w=828&q=75" alt="" />
             <img src="https://allen.in/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdpzpn3dkw%2Fimage%2Fupload%2Fv1707310904%2Fc_2_ix0igr.webp&w=828&q=75" alt="" />
@@ -95,7 +97,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="py-12 slider-container mt-8">
+        <div className="py-12 slider-container mt-8 m-4">
           <Slider {...settings} className="flex justify-center p-5 w-full">
             <a href="">
               <img
@@ -136,7 +138,7 @@ const Home = () => {
         </div>
 
 
-        <div className="py-12">
+        <div className="py-12 m-4">
             <div className="flex justify-center mb-16 font-bold text-5xl">Our remarkable results in 2024</div>
             <div className="slider-container z-1">
                 <Slider {...settings}>
@@ -155,7 +157,7 @@ const Home = () => {
               Discover the perfect online program
             </h2>
           </div>
-          <ul className="flex gap-8 pt-6">
+          <ul className="flex lg:flex-row flex-col items-center gap-8 pt-6">
             <li
               style={{ backgroundColor: "#1a2439" }}
               className="rounded-2xl bg-[url('https://res.cloudinary.com/dpzpn3dkw/image/upload/v1729079766/jee_vd0eql.webp')] h-60 w-80 bg-contain"
@@ -204,10 +206,10 @@ const Home = () => {
           </ul>
         </div>
 
-        <div className="py-12 flex justify-between">
-          <div className="w-1/4 flex flex-col justify-center">
-            <div className="text-[#58b1a6] font-medium pb-6">TESTIMONIALS</div>
-            <div className="font-medium text-3xl pb-14">
+        <div className="py-12 lg:flex justify-between">
+          <div className="lg:w-1/4 flex flex-col justify-center">
+            <div className="text-[#58b1a6] font-medium pb-6 hidden lg:visible">TESTIMONIALS</div>
+            <div className="font-medium text-3xl lg:pb-14">
               Here's what students are saying
             </div>
           </div>
@@ -230,7 +232,7 @@ const Home = () => {
                 Present in 53 cities with
               </div>
               <div className="text-2xl font-normal mb-12">250+ calssrooms</div>
-              <button className="md:w-36 px-4 py-2 m-1 bg-white text-black rounded-full">
+              <button className="lg:w-36 px-4 py-2 m-1 bg-white text-black rounded-full">
                 Find a center
               </button>
             </div>

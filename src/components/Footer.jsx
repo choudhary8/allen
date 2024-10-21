@@ -2,8 +2,8 @@ import { FaYoutube, FaInstagram, FaSquareFacebook, FaXTwitter, FaLinkedin  } fro
 const Footer=()=>{
     return (
         <>
-        <div className="px-44 py-12">
-            <div className="grid grid-cols-6 gap-10">
+        <div className="lg:px-44 px-6 lg:py-12">
+            <div className="grid lg:grid-cols-6 grid-cols-2 md:grid-cols-3 gap-10">
                 <div>
                     <div className="font-semibold py-2">About</div>
                     <div className="flex flex-col text-xs">
@@ -67,9 +67,9 @@ const Footer=()=>{
                 </div>
             </div>
             <hr className="border-1.5 mt-10"/>
-            <div className="pt-10 flex justify-between">
+            <div className="pt-10 flex md:flex-row flex-col justify-between">
                 <div>ALLEN Career Institute Pvt. Ltd. © manoj.</div>
-                <div className="flex gap-x-4">
+                <div className="flex  gap-x-4">
                     <a href="https://www.linkedin.com/in/manoj-kumar8/"><FaYoutube/></a>
                     <a href="https://www.linkedin.com/in/manoj-kumar8/"><FaInstagram /></a>
                     <a href="https://www.linkedin.com/in/manoj-kumar8/"><FaSquareFacebook/></a>

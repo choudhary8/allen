@@ -17,13 +17,13 @@ const settings = {
 const StuTestimonial = ({ testimonials }) => {
   return (
     <>
-      <div className=" slider-container w-3/4 m-10 " >
+      <div className=" slider-container lg:w-3/4 m-10 " >
         <Slider {...settings} className="">
           {testimonials.map((testimonial,index) =>  (
               <div key={index} className="w-80 " 
               
               >
-                <div className="h-[400px] pt-4 px-8 pb-8 rounded-2xl mt-5 " style={{ backgroundColor: "#1a2439" }}>
+                <div className="h-[430px] pt-4 px-8 pb-8 rounded-2xl mt-5 " style={{ backgroundColor: "#1a2439" }}>
                 <div className="relative bottom-10 right-4 text-6xl text-[#58b1a6]">
                   <RiDoubleQuotesL />
                 </div>

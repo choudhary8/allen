@@ -1,31 +1,49 @@
-import { useState } from 'react'
-import './App.css'
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
-import Layout from './Layout'
-import Home from './components/Home'
+import { useState } from "react";
+import "./App.css";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import Layout from "./Layout";
+import Home from "./components/Home";
+import ComingSoon from "./components/ComingSoon";
 
-
-
-const router=createBrowserRouter(
+const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout/>}>
-      <Route path='' element={<Home/>}/>
-      <Route path='neet/'></Route>
-      <Route path='programs/'></Route>
-      <Route path='scholarships/'></Route>
-      <Route path=''></Route>
+    <Route path="/" element={<Layout />}>
+      <Route path="" element={<Home />} />
+      <Route path="neet/">
+        <Route path="class-11/" element={<ComingSoon />} />
+        <Route path="class-12/" element={<ComingSoon />} />
+        <Route path="class-12-plus/" element={<ComingSoon />} />
+      </Route>
+      <Route path="jee/">
+        <Route path="class-11/" element={<ComingSoon />} />
+        <Route path="class-12/" element={<ComingSoon />} />
+        <Route path="class-12-plus/" element={<ComingSoon />} />
+      </Route>
+      <Route path="classes-6-10/">
+        <Route path="class-6/" element={<ComingSoon />} />
+        <Route path="class-7/" element={<ComingSoon />} />
+        <Route path="class-8/" element={<ComingSoon />} />
+        <Route path="class-9/" element={<ComingSoon />} />
+        <Route path="class-10/" element={<ComingSoon />} />
+      </Route>
+      <Route path=""></Route>
     </Route>
   )
-)
+);
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

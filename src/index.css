@@ -49,6 +49,19 @@
 	z-index: 0;
 }
 
+.nav-list{
+	visibility: hidden;
+}
+
+.nav-item:hover .nav-list{
+	visibility: visible;
+	
+}
+
+.nav-list{
+	transition: visibility 0.1s ease;
+}
+
 
 
 
